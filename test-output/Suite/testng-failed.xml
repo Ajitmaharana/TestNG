@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="ip" value="localhost"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="ip" value="localhost"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.DemoA">
+        <methods>
+          <include name="testA"/>
+          <include name="closeApp"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="openApp"/>
+        </methods>
+      </class> <!-- script.DemoA -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

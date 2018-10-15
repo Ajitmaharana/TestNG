@@ -1,0 +1,18 @@
+
+<suite name="Suite" parallel="tests">
+  <test name="Test1">
+  <parameter name="ip" value="172.20.10.7"/>
+  <parameter name="browser" value ="chrome"/>
+    <classes>
+      <class name="HubNode.DemoB"/>
+    </classes>
+  </test> 
+  
+  <test name="Test2">
+  <parameter name="ip" value="172.20.10.2"/>
+  <parameter name="browser" value ="chrome"/>
+    <classes>
+      <class name="HubNode.DemoB"/>
+    </classes>
+  </test>  
+</suite> 
