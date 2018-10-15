@@ -1,18 +1,9 @@
-
-<suite name="Suite" parallel="tests">
-  <test name="Test1">
-  <parameter name="ip" value="172.20.10.7"/>
-  <parameter name="browser" value ="chrome"/>
-    <classes>
-      <class name="HubNode.DemoB"/>
-    </classes>
+<suite name="Suite"  parallel="tests"> 
+  <test name="Test">
+   <parameter name="ip" value="localhost"/>
+   <parameter name="browser" value="chrome"/>
+    <packages>
+      <package name="script"/>
+    </packages>
   </test> 
-  
-  <test name="Test2">
-  <parameter name="ip" value="172.20.10.2"/>
-  <parameter name="browser" value ="chrome"/>
-    <classes>
-      <class name="HubNode.DemoB"/>
-    </classes>
-  </test>  
 </suite> 
