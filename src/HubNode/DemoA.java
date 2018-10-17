@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class DemoA {
 	@Test
 	public static void testGrid() throws Exception{
-		URL remoteAddress=new URL("http://192.168.1.23:4444/wd/hub");
+		URL remoteAddress=new URL("http://localhost:4444/wd/hub");
 		DesiredCapabilities capabilities=new DesiredCapabilities();
 		capabilities.setBrowserName("firefox");
 		WebDriver driver=new RemoteWebDriver(remoteAddress,capabilities);

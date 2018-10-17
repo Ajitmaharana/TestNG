@@ -141,16 +141,12 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;ip&quot; value=&quot;localhost&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;script&quot;/&gt;
-    &lt;/packages&gt;
     &lt;classes&gt;
       &lt;class name=&quot;script.OrangeTC1&quot;/&gt;
-      &lt;class name=&quot;script.Scriptless&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -164,7 +160,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,12 +198,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testA')
 data.setCell(0, 2, 'script.OrangeTC1')
-data.setCell(0, 3, 3182);
+data.setCell(0, 3, 4857);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,11 +245,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA</span>
-                <span class="method-start">4952 ms</span>
+                <span class="method-start">10666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=OrangeTC1.testA()[pri:1, instance:script.OrangeTC1@1794...)</span>
-                <span class="method-start">8135 ms</span>
+                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=OrangeTC1.testA()[pri:1, instance:script.OrangeTC1@604e...)</span>
+                <span class="method-start">15525 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
